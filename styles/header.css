@@ -1,0 +1,36 @@
+li a{
+  text-decoration: none;
+  color: var(--txt-prim);
+  font: var(--nav);
+  gap: 8px;
+}
+ul li a:hover{
+  color: var(--txt-hover);
+}
+
+nav ul#nav-itens{
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-items: center;
+}
+
+header{
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 32px 100px;
+}
+
+@media (max-width: 768px) {
+  li a{
+    font: var(--navm);
+  }
+  nav ul#nav-itens{
+    gap: 8px;
+  }
+  header{
+    padding: 24px;
+  }
+}

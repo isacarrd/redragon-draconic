@@ -1,0 +1,67 @@
+section#store-section {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  padding: 74px 0px;
+}
+
+section#store-section h2 {
+  text-align: center;
+  margin-bottom: 24px;
+  color: var(--txt-prim);
+  font: var(--h2);
+}
+
+li {
+  list-style: none;
+}
+div.animacao {
+  /* width: max-content; */
+  width: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+div.animacao ul {
+  width: max-content;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  animation: slide 15s linear infinite;
+}
+div.animacao ul::after {
+  content: "";
+  flex-shrink: 0;
+  background: url(/assets/images/desktop/pichau-desktop.png),
+    url(/assets/images/desktop/logo-kabum-desktop.svg),
+    url(/assets/images/desktop/terabyte-logo-desktop.svg),
+    url(/assets/images/desktop/Amazon_logo-desktop.png),
+    url(/assets/images/desktop/logo-patoloco-desktop.svg);
+}
+div.animacao img {
+  /* max-width: 120px; */
+  height: auto;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+  section#store-section h2{
+    font: var(--h2m);
+  }
+  div.animacao ul {
+    gap: 20px;
+  }
+  div.animacao img {
+    max-width: 150px;
+  }
+}
