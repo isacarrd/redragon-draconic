@@ -12,7 +12,7 @@
 </p>
 
 <p align="center">
-     <a href="#">🚦 Projeto</a>
+     <a href="https://redragon-draconic.vercel.app/">🚦 Projeto</a>
      <a href="https://www.figma.com/community/file/1567348884716242526">🚧 Figma</a>
 </p>
 
