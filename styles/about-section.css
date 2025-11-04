@@ -31,11 +31,15 @@ div.lf {
 }
 
 section.conteudo {
+  overflow: hidden !important;
   width: auto;
   max-height: 550px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+section.conteudo picture{
+  overflow: hidden;
 }
 
 /* Media querie */
@@ -58,7 +62,6 @@ section.conteudo {
   }
   div.txt-about {
     padding: 24px;
-    max-width: fit-content;
     gap: 16px;
   }
   section#about-section {

@@ -43,6 +43,15 @@ div.conteudo-ft span {
   font: var(--span);
   text-align: center;
 }
+span a#redragon{
+  text-decoration: none;
+  font: var(--nav);
+  color: var(--txt-destaque);
+}
+span a#redragon:hover{
+  text-decoration: underline;
+  cursor: pointer;
+}
 
 /* Media queries */
 @media (max-width: 768px) {
