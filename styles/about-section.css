@@ -23,6 +23,10 @@ div.txt-about {
   justify-content: center;
 }
 
+section.conteudo .txt-about.rg{
+  order: 2;
+}
+
 div.rg {
   text-align: right;
 }
@@ -54,6 +58,12 @@ section.conteudo picture{
   div.rg {
     text-align: center;
   }
+  section.conteudo .txt-about.rg{
+  order: 1 !important;
+}
+section.conteudo picture{
+  order: 2;
+}
   section.conteudo {
     overflow: hidden;
     flex-direction: column;
